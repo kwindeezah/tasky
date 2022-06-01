@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman';
+}
+
+body{
+    background-color: beige;
+}
+
+.container{
+    width: 400px;
+    background-color: chocolate;
+    margin-left: 55vh;
+    margin-top: 30vh;
+    padding: 10px;
+}
+
+.container h2{
+    text-align: center; 
+}
+
+.container form .tasks{
+    font-size: 15px;
+    width: 75%;
+    border: 5px;
+    border-color: blanchedalmond;
+    height: 25px;
+    border-radius: 10px;
+    padding: 3ch;
+}
+
+.container form .tasks:focus{
+    color: green;
+    outline: none;
+}
+
+.container form .submit{
+    padding: 15px 20px;
+    background-color: blanchedalmond;
+    color: black;
+    font-size: small;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.container form .submit:hover{
+    color: chocolate;
+    background-color: white;
+}
+
+.container .todoList{
+    margin-top: 10px;
+    list-style: none;
+}
+
+.container .todoList li{
+    border: 1px solid black;
+    border-radius: 0 5px 5px 0;
+    margin-bottom: 5px;
+    line-height: 50px;
+    position: relative;
+}
+
+.container .todoList li span i{
+    color: white;
+    position: absolute;
+    right: 0;
+    background-color: red;
+    padding: 17px 20px;
+    border-radius: 0 5px 5px 0;
+}

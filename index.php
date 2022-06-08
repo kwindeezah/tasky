@@ -19,8 +19,8 @@ include ("config.php");
             <div class="todoList">
                  <?php
                 $result = mysqli_query($conn, "SELECT * FROM tasks ORDER BY id");
-                while($data_task = mysqli_fetch_array($result)){ 
-                ?> 
+                while($data_task = mysqli_fetch_array($result)){
+                    ?> 
               <li><?php echo $data_task['task']?><?php echo "<a href='delete_task.php?id=$data_task[id]'><span><i class='fa fa-trash' aria-hidden='true'></i></span></a>"?></li>
                <?php } ?> 
           </div>
